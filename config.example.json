@@ -1,0 +1,79 @@
+{
+  "servers": [
+    {
+      "name": "Web Server 1",
+      "hostname": "192.168.1.100",
+      "username": "admin",
+      "port": 22,
+      "use_key": true,
+      "key_path": "/home/user/.ssh/id_rsa",
+      "group": "production",
+      "description": "Primary web server"
+    },
+    {
+      "name": "Web Server 2",
+      "hostname": "192.168.1.101",
+      "username": "admin",
+      "port": 22,
+      "use_key": true,
+      "key_path": "/home/user/.ssh/id_rsa",
+      "group": "production",
+      "description": "Secondary web server"
+    },
+    {
+      "name": "Database Server",
+      "hostname": "192.168.1.200",
+      "username": "dbadmin",
+      "port": 22,
+      "use_key": true,
+      "key_path": "/home/user/.ssh/id_rsa",
+      "group": "database",
+      "description": "PostgreSQL server"
+    },
+    {
+      "name": "Windows Server",
+      "hostname": "192.168.1.50",
+      "username": "Administrator",
+      "port": 22,
+      "use_key": false,
+      "password": "encrypted_password_here",
+      "group": "windows",
+      "description": "Windows Server 2019 with OpenSSH"
+    },
+    {
+      "name": "Dev Server",
+      "hostname": "dev.example.com",
+      "username": "developer",
+      "port": 2222,
+      "use_key": true,
+      "key_path": "/home/user/.ssh/dev_key",
+      "group": "development",
+      "description": "Development and testing server"
+    }
+  ],
+  "groups": {
+    "production": {
+      "color": "#ff0000",
+      "description": "Production servers - handle with care"
+    },
+    "database": {
+      "color": "#00ff00",
+      "description": "Database servers"
+    },
+    "windows": {
+      "color": "#0000ff",
+      "description": "Windows servers"
+    },
+    "development": {
+      "color": "#ffff00",
+      "description": "Development and testing environments"
+    }
+  },
+  "settings": {
+    "default_timeout": 30,
+    "max_parallel_connections": 10,
+    "auto_reconnect": true,
+    "save_command_history": true,
+    "command_history_size": 100
+  }
+}
