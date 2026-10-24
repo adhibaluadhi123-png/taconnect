@@ -123,3 +123,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
+give a pargraph about the features
+The Server Connection History feature maintains a detailed log of previous SSH sessions, including server IP addresses, connection timestamps, executed commands, execution status, and error messages. It allows users to review past activities, troubleshoot connection issues, track command execution, and export logs for auditing. This feature improves transparency, simplifies debugging, and makes managing multiple servers more efficient and secure
